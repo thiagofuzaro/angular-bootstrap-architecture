@@ -5,13 +5,13 @@
         .module( 'App' )
         .directive( 'alertMessage', [function() {
             return {
-                restrict : 'E',
-                scope : {
-                    message : '@'
+                restrict: 'E',
+                scope: {
+                    message: '@'
                 },
-                replace : true,
+                replace: true,
                 transclude: true,
-                templateUrl : '/templates/components/alert-message.html'   
+                templateUrl: '/templates/components/alert-message.html'   
             };
         }]);
 }());

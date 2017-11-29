@@ -3,13 +3,15 @@
 
     angular
         .module( 'App' )
-        .controller( 'AjaxExampleCtrl', [ '$scope', 'ServiceURL', 'XHRFactory', function( $scope, ServiceURL, XHRFactory ) {
-            // variáveis expostas
+        .controller( 'AjaxExampleCtrl', [ '$scope', 'AjaxExampleServices', function( $scope, AjaxExampleServices ) {
             $scope.callback = [];
 
+            function init() {
+                getRegisters();
+            }
+
             function getRegisters() {
-                XHRFactory
-                .get( ServiceURL.xpto )
+                AjaxExampleServices.getRegisters()
                 .then( getRegistersDone, getRegistersFail );
             }
 
@@ -21,6 +23,6 @@
                 console.log( data );
             }
 
-            getRegisters();
+            init();
         }]);
 }());

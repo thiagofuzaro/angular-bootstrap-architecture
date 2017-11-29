@@ -55,8 +55,7 @@
                 'app/js/factories/HttpInterceptorFactory.js',
                 'app/js/factories/ModalFactory.js',
                 // services
-                'app/js/services/ShotListServices.js',
-                'app/js/services/ShotServices.js'
+                'app/js/services/AjaxExampleServices.js'
             ],
             mockJS: [
                 'bower_components/angular-mocks/angular-mocks.js',

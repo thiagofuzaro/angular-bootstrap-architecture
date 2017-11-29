@@ -9,7 +9,7 @@
                 scope: {
                     message: '@'
                 },
-                replace : true,
+                replace: true,
                 transclude: true,
                 templateUrl: '/templates/components/field-message.html'
             };

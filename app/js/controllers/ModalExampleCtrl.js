@@ -4,11 +4,13 @@
     angular
         .module( 'App' )
         .controller( 'ModalExampleCtrl', [ '$scope', 'ModalMessages', 'ModalFactory', 'ModalDefinitions', function( $scope, ModalMessages, ModalFactory, ModalDefinitions ) {
-            // variáveis expostas
             $scope.modalCallback = null;
 
-            // funções expostas
             $scope.openModal = openModal;
+
+            function init() {
+                openModal();
+            }
 
             function openModal() {
                 $scope.modalCallback = null;
@@ -22,6 +24,6 @@
                     });
             }
 
-            openModal();
+            init();
         }]);
 }());
