@@ -14,7 +14,7 @@
 >
 > 4.Instale [Git](https://git-scm.com/download/win) 
 >
-> 5.Clone esse repositório usando ` git clone https://github.com/thiagofuzaro/dribbble-api-angular-js.git `
+> 5.Clone esse repositório usando ` git clone https://github.com/thiagofuzaro/angular-bootstrap-architecture.git `
 >
 > 6.Rode os comandos no prompt de comando dentro da pasta do projeto:
 >
